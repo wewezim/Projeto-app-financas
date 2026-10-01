@@ -26,27 +26,113 @@ Antes de pedir para a IA "criar um app", é importante definir com clareza o que
 Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
 
 ```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
-
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
-
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
-
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
-
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
+Crie uma aplicação web responsiva chamada "Assistente Universal de Organização Financeira".
+ 
+Objetivo:
+Desenvolver uma plataforma financeira extremamente simples, acessível e inclusiva, baseada em conversação natural.
+ 
+Público:
+Qualquer pessoa, independentemente de escolaridade, idade, profissão, alfabetização financeira ou experiência digital.
+ 
+Princípios de UX:
+- Design Universal
+- Linguagem simples
+- Alto contraste
+- Ícones ilustrativos
+- Textos curtos
+- Mobile First
+- Acessibilidade WCAG
+- Suporte futuro para voz
+ 
+Funcionalidades:
+ 
+1. Chat Financeiro
+- Registrar receitas e despesas por linguagem natural.
+- Exemplo: "Gastei R$ 50 no mercado."
+- Exemplo: "Recebi R$ 3.500 de salário."
+ 
+2. Classificação Automática
+Categorias:
+- Alimentação
+- Despesas do Lar
+- Serviços e Manutenção
+- Veículos
+- Transporte
+- Viagens
+- Lazer
+- Impostos e Taxas
+- Cartão de Crédito
+- Assinaturas
+- Saúde
+- Educação
+- Outros
+ 
+3. Controle de Saldo
+Calcular:
+Saldo Atual = Saldo Inicial + Receitas - Despesas
+ 
+4. Metas Financeiras
+Permitir criar, acompanhar e atualizar metas.
+ 
+5. Dashboard
+Exibir:
+- Saldo atual
+- Receitas
+- Despesas
+- Top categorias
+- Evolução mensal
+- Metas
+ 
+Estrutura de Dados:
+ 
+Tabela Controle_Geral
+- id
+- data
+- saldo_inicial
+- total_receitas
+- total_despesas
+- saldo_atual
+ 
+Tabela Receitas
+- id
+- data
+- categoria
+- descricao
+- valor
+ 
+Tabela Despesas
+- id
+- data
+- categoria
+- subcategoria
+- descricao
+- forma_pagamento
+- valor
+ 
+Tabela Cartao_Credito
+- id
+- data_compra
+- categoria
+- descricao
+- parcelas
+- valor
+ 
+Tabela Metas
+- id
+- nome_meta
+- valor_objetivo
+- valor_atual
+- progresso
+ 
+Crie:
+- Tela de onboarding
+- Tela principal de chat
+- Dashboard financeiro
+- Relatórios
+- Metas financeiras
+- Visual moderno, amigável e acessível
+ 
+Priorize simplicidade, inclusão, clareza visual e facilidade de uso para usuários iniciantes.
 ```
 
 Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
