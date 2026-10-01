@@ -1,31 +1,8 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 App de Finanças Pessoais do Weslley Nascimento com Vibe Coding
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+PRD refinado no Copilot Web:
 
-## ✨ O que é Vibe Coding
-
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
-
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
-
-## 🎯 Desafio
-
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
-
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
-
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
-
-## 🪄 Etapas do Desafio
-
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
-
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
-
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
-
-```txt
+```
 Crie uma aplicação web responsiva chamada "Assistente Universal de Organização Financeira".
  
 Objetivo:
@@ -134,42 +111,120 @@ Crie:
  
 Priorize simplicidade, inclusão, clareza visual e facilidade de uso para usuários iniciantes.
 ```
+Interações com o Lovable:
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+> crie um app de finanças pessoais com base no seguinte PRD: {PRD}
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+> infelizmente está havendo um erro no aplicativo. eu digito que entrou um saldo como receita e ele está calculando como despesa, favor verificar o funcionamento do sistema. (Corrigi: o chat não reconhecia como entrada frases como "entrou saldo", "depositei", "caiu um pix", "entrada de R$ 200", "receita" ou "reembolso". Agora elas contam como entrada de dinheiro. Frases com palavras de gasto, como "gastei", "paguei" ou "comprei", continuam contando como saída. Não testei essa mudança no aplicativo. Tente digitar sua frase de novo e veja se o saldo aumenta. Se ainda der errado, me mande a frase exata que você usou.)
 
-### 2. Explorando o Lovable na Prática
+> outro problema. eu estou pedindo para ele reiniciar os cálculos, pois ele entendeu errado. e ele não consegue reiniciar. tem de haver um botão ou um entendimento para ele corrigir o lançamento que ele fez. crie, por favor, um botão de desfazer e outro botão de refazer lançamento. (Your work is paused because you're out of credits. 5 free credits arrive in 4 hours.)>
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+Resultado final no Lovable: https://appcontroleseudinheiro.lovable.app/
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+<img width="1920" height="928" alt="image" src="https://github.com/user-attachments/assets/f19ea514-8ff6-48d8-8291-17db78e5f1c5" />
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+<img width="1144" height="868" alt="image" src="https://github.com/user-attachments/assets/91345c47-c7cc-4f37-906c-e7bad2354b9d" />
 
-### 3. Entregando o Desafio na DIO
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+Resumo da criação do aplicativo:
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+Segue um resumo estruturado da sua experiência com o desenvolvimento do Assistente Financeiro Conversacional, considerando o PRD, o MVP gerado e os problemas encontrados durante os testes.
 
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
+Resumo da Experiência
+✅ O que funcionou bem?
+Interface simples e intuitiva
 
-## 💬 Conclusão
+O aplicativo apresentou uma interface limpa, amigável e fácil de entender. O saldo atual ficou em destaque, permitindo que o usuário visualize rapidamente sua situação financeira.
 
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+Registro financeiro por linguagem natural
+
+O sistema conseguiu reconhecer comandos simples como:
+
+"Gastei R$ 50 no mercado"
+"Recebi R$ 3.500 de salário"
+
+Isso validou a proposta principal do projeto: permitir o controle financeiro sem formulários complexos.
+
+Estrutura alinhada ao PRD
+
+As funcionalidades principais previstas no documento foram criadas:
+
+Chat financeiro
+Saldo atualizado
+Área de Resumo
+Área de Metas
+Área de Relatórios
+Conceito de Design Universal
+
+A navegação é simples, com poucos elementos na tela, favorecendo usuários iniciantes e pessoas com pouca familiaridade com aplicativos financeiros.
+
+❌ O que não funcionou como o esperado?
+Falha na correção de lançamentos
+
+O principal problema encontrado foi a impossibilidade de corrigir registros realizados incorretamente pela IA.
+
+Exemplo:
+
+Se o sistema interpretava um valor errado ou registrava uma movimentação incorreta, não existia uma forma simples de corrigir o lançamento.
+
+Falha ao reiniciar os cálculos
+
+Mesmo quando solicitado pelo usuário, o sistema não conseguiu reiniciar corretamente os cálculos financeiros, mantendo informações inconsistentes no saldo.
+
+Ausência de histórico auditável
+
+Não foi possível visualizar claramente:
+
+Qual foi o último lançamento registrado.
+Quais alterações foram realizadas.
+A sequência das movimentações financeiras.
+Ausência de botão "Desfazer"
+
+O sistema não possuía uma funcionalidade para remover o último lançamento registrado.
+
+Isso gerou um problema de usabilidade, pois pequenos erros exigiam a tentativa de reiniciar todo o processo.
+
+Ausência de botão "Refazer"
+
+Após uma ação de correção, também não existia uma forma de restaurar um lançamento removido por engano.
+
+Falta de edição de lançamentos
+
+Não havia um mecanismo para realizar correções simples, como:
+
+Alterar valor.
+Alterar categoria.
+Alterar descrição.
+Alterar forma de pagamento.
+Dependência excessiva da interpretação da IA
+
+Quando a IA interpretava um comando de forma incorreta, o usuário ficava sem ferramentas para corrigir rapidamente o erro.
+
+📚 O que aprendi sobre conversar com IAs?
+Quanto mais específico o pedido, melhor o resultado
+
+Percebi que a IA responde melhor quando recebe instruções detalhadas sobre comportamento, regras de negócio e experiência do usuário.
+
+O PRD influencia diretamente a qualidade do produto
+
+Muitas das funcionalidades geradas vieram diretamente do que estava documentado no PRD. Quando um requisito não foi descrito com clareza, a IA não o implementou adequadamente.
+
+É importante prever cenários de erro
+
+Ao criar aplicações com IA, não basta pensar apenas no fluxo ideal. É necessário documentar:
+
+Correção de erros.
+Desfazer ações.
+Recuperação de dados.
+Confirmações antes de exclusões.
+IA não substitui validação humana
+
+Embora a IA tenha criado rapidamente uma primeira versão funcional, foi necessário testar o sistema para identificar problemas de usabilidade e confiabilidade.
+
+Vibe Coding é um processo iterativo
+
+O desenvolvimento não termina na primeira geração do aplicativo. O valor está em testar, identificar problemas, ajustar o PRD e gerar novas versões mais completas.
+
+Conclusão
+
+O MVP validou com sucesso a ideia de um Assistente Financeiro Conversacional para controle de finanças pessoais, demonstrando que é possível registrar receitas e despesas por meio de linguagem natural de forma simples. Entretanto, os testes revelaram uma deficiência crítica relacionada à gestão de erros: o usuário não consegue corrigir ou desfazer lançamentos incorretos com facilidade. Como próximo passo, recomenda-se implementar funcionalidades de Desfazer, Refazer, Editar Lançamento, Histórico de Movimentações e Confirmação para exclusão de dados, aumentando a confiabilidade e a experiência do usuário na gestão financeira diária.
