@@ -130,7 +130,13 @@ Resumo da criação do aplicativo:
 
 <img width="1202" height="2268" alt="image" src="https://github.com/user-attachments/assets/b461765a-522a-475f-ba80-a679a1f166b4" />
 
+## Reflexão
 
+### O que funcionou bem?
+O refinamento do PRD previamente feito no Copilot ajudou muito, pois os créditos do Lovable acabaram em apenas 3 interações.
 
+### O que não funcionou como o esperado?
+Esperava poder ter uma tecla de erro de lançamento, pois o app não entendia algumas informações simples, como "sobrou dinheiro no caixa" ou "saldo do mês anterior" e acabou raciocinando como se fosse uma despesa, gerando discrepâncias no extrato e no relatório do mês. Se possuísse mais créditos, seria algo a ser aprimorado.
 
-
+### O que aprendeu sobre conversar com IAs?
+Aprendi que a IA possui um método de funcionamento com o qual ela está acostumada a ver em outros sites. No entanto, o prompt bem alimentado por informações úteis faz com que ela gere o resultado final esperado. Assim, deve-se trabalhar com bastante calma e criar um PRD bem elaborado de forma que se consiga atingir o objetivo final.
